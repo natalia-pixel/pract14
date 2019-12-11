@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>elementos interactivos</title>
+</head>
+<body>
+    <header><h2>Elementos interactivos</h2></header>
+    <main>
+        <section>
+            <p>La que se avecina termina...</p>
+            <details>
+                <summary>Pulsa si quieres saber el final</summary>
+                <p>Todo era un sueño de  ... </p>
+            </details>
+        </section>
+<hr>
+<!-- open -->
+        <section>
+            <p>Formulario de matricula</p>
+
+            <details open>
+            <summary>Datos personales</summary>
+            <p>Nombre: <input type="text" name="nombre"></p>
+            <p>Apellidos: <input type="text" name="nombre"></p>
+            </details>
+
+            <details>
+            <summary>Situación actual</summary>
+            <p>Empresa: <input type="text" name="empresa"></p>
+            </details>
+        </section>
+<hr>
+<!-- sumary -->
+        <section>
+            <p>details in sumary</p>
+
+            <details>
+                <summary>Detalles</summary>
+            <ul>
+            <li>HTML: HyperText Markup Language</li>
+            <li>SGML: Standard Generalized Markup Language</li>
+            <li>IETF: Internet Engineering Task Force</li>
+            <li>W3C: World Wide Web Consortium</li>
+            </ul>
+            </details>
+            <p>ASIR es un ciclo de grado superior</p>
+            <summary>Notas</summary>
+        </section>
+        
+        <!-- dialog -->
+        <section>
+                <dialog id="dialog-notas">
+                        <h1>Ventana de diálogo</h1>
+                      
+                        <p>Esto es un ejemplo de ventana de diálogo</p>
+                      
+                        <p>
+                          <input type="button" value="Cerrar" onclick="document.getElementById('dialog-notas').removeAttribute('open')">
+                        </p>
+                      </dialog>
+                      
+                      <p>
+                        <input type="button" value="Muestra diálogo" onclick="document.getElementById('dialog-notas').setAttribute('open', 'open')">
+                      </p>
+                       <p>Cuando se hace clic en el botón, se muestra un cuadro de diálogo modal que se superpone al contenido de la página.</p>
+ 
+        </section>
+    </main>
+</body>
+</html>
